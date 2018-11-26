@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Propositional Equivalence</title>
+	<link rel="stylesheet" type="text/css" href="../style/equivalence.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html">Propositional Logic</a></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Introduction</a>
+				<ul>
+					<li><a href="logic.html">What is Propositional Logic?</a></li>
+					<li><a href="operations.html">Logical Operations</a></li>
+					<li><a href="forms.html">Propositional Forms</a></li>
+					<li><a href="tables.html">Truth Tables</a></li>
+					<li><a href="equivalence.html">Propositional Equivalence</a></li>
+					<li><a href="circuit.html">Logic Circuits</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="practice.html">Practice Problems</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>Propositional Equivalence</h1>
+	<p class="body">Suppose that <i>P</i> and <i>Q</i> are propositional forms. We write <i>P</i> &equiv; <i>Q</i> to mean that <i>P</i> and <i>Q</i> are <b>logically equivalent</b>, i.e., that <i>P</i> is true if and only if <i>Q</i> is true. Example:</p>
+	<p class="body1"><i>p</i> &or; <i>q</i> &equiv; <i>q</i> &or; <i>p</i></p> 
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &and; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td></tr>
+		</table> 
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>q</i> &and; <i>p</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td></tr>
+		</table> 
+	</center>
+	<p class="body"><i>P</i> &equiv; <i>Q</i> is <i>not</i> a proposition. It is a statement <i>about</i> the propositions <i>P</i> and <i>Q</i>, namely, that the propositions are true(and false) under the same conditions.</p> 
+	<center><img src="../images/identity.jpg" alt="List of propositional laws"></center>
+	<center><p class="body1">List of propositional laws</p>
+</body>
+</html>

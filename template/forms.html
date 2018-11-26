@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Propositional Forms</title>
+	<link rel="stylesheet" type="text/css" href="../style/forms.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html">Propositional Logic</a></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Introduction</a>
+				<ul>
+					<li><a href="logic.html">What is Propositional Logic?</a></li>
+					<li><a href="operations.html">Logical Operations</a></li>
+					<li><a href="forms.html">Propositional Forms</a></li>
+					<li><a href="tables.html">Truth Tables</a></li>
+					<li><a href="equivalence.html">Propositional Equivalence</a></li>
+					<li><a href="circuit.html">Logic Circuits</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="practice.html">Practice Problems</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>Propositional Forms</h1>
+	<p class="body">Through <b>Boolean variables</b>, we can create <b>Boolean expressions</b> (sometimes called <b>propositional forms</b>). For example starting with Boolean variables <i>p</i> and <i>q</i>, we can get Boolean expressions such as <i>p'</i>, <i>q'</i>, <i>p</i> &and; <i>q</i>, <i>p</i> &or; <i>q</i>, <i>p</i> &and; <i>q'</i>, and so forth.</p>
+	<p class="body">To define Boolean expression:</p>
+	<p class="body1">Any Boolean variable is a Boolean expression.</p>
+	<p class="body1">If <i>P</i> is a Boolean expression, then <i>P'</i> is also a Boolean expression.</p>
+	<p class="body1">If <i>P</i> and <i>Q</i> are Boolean expressions, then so are <i>P</i> &and; <i>Q</i>, <i>P</i> &or; <i>Q</i>, <i>P</i> &oplus; <i>Q</i>, <i>P</i> &rArr; <i>Q</i>, and <i>P</i> &hArr; <i>Q</i>.</p>
+	<p class="body1">Nothing else is a Boolean expression.</p>
+	<p class="body">Simplified precedence rules for Boolean expressions:</p>
+	<p class="body1">Parenthesized subexpressions come first.</p>
+	<p class="body1">Negation(') comes next.</p>
+	<p class="body1">Multiplicative operation(&and;) is donebefore additive operations(&or;,&oplus;).</p>
+	<p class="body1">Use parentheses if you have <i>any</i> doubt. Always use parentheses if you have multiple conditionals.</p>
+	<p class="body1">Evaluate ties left-to-right.</p>
+	<p class="body">Examples:</p>
+	<p class="body1">(<i>p</i> &and; <i>q</i>) &or; <i>r</i> can be simplified to <i>p</i> &and; <i>q</i> &or; r.</p>
+	<p class="body1">((<i>p</i> &and; <i>q</i>) &or; (<i>p</i> &and; (<i>r'</i>))) &and; (<i>p</i> &or; <i>r</i>) can be simplified to (<i>p</i> &and; <i>q</i> &or; <i>p</i> &and; <i>r'</i>) &and; (<i>p</i> &or; <i>r</i>).</p>
+</body>
+</html>

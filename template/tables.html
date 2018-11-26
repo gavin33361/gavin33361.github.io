@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Truth Tables</title>
+	<link rel="stylesheet" type="text/css" href="../style/tables.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html">Propositional Logic</a></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Introduction</a>
+				<ul>
+					<li><a href="logic.html">What is Propositional Logic?</a></li>
+					<li><a href="operations.html">Logical Operations</a></li>
+					<li><a href="forms.html">Propositional Forms</a></li>
+					<li><a href="tables.html">Truth Tables</a></li>
+					<li><a href="equivalence.html">Propositional Equivalence</a></li>
+					<li><a href="circuit.html">Logic Circuits</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="practice.html">Practice Problems</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>Truth Tables</h1>
+	<p class="body">A logical statement having <i>n</i> component statements will have 2<sup><i>n</i></sup> rows in its truth table. For example, the expression <i>p</i> &and; <i>q'</i> will have 4 rows.</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>q'</i></th><th><i>p</i> &and; <i>q'</i></th></tr>
+			<tr><td>T</td><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>T</td><td>F</td><td>T</td><td>T</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td><td>F</td></tr>
+		</table>
+	</center>
+	<p class="body">A Boolean expression that is always true is said to be a <i>tautology</i>, whereas a Boolean expression that is always false is said to be a <i>contradiction</i>. Examples:</p>
+	<center>
+		<p class="body1">This is a tautology.</p>
+		<table>
+			<tr><th><i>p</i></th><th><i>p'</i></th><th><i>p</i> &or; <i>p'</i></th></tr>
+			<tr><td>T</td><td>F</td><td>T</td></tr>
+			<tr><td>F</td><td>T</td><td>T</td></tr>
+		</table> 
+		<p class="body1">This is a contradiction.</p>
+		<table>
+			<tr><th><i>p</i></th><th><i>p'</i></th><th><i>p</i> &and; <i>p'</i></th></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td></tr>
+		</table> 
+	</center>
+</body>
+</html>

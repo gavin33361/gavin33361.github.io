@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logic Circuits</title>
+	<link rel="stylesheet" type="text/css" href="../style/circuit.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html">Propositional Logic</a></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Introduction</a>
+				<ul>
+					<li><a href="logic.html">What is Propositional Logic?</a></li>
+					<li><a href="operations.html">Logical Operations</a></li>
+					<li><a href="forms.html">Propositional Forms</a></li>
+					<li><a href="tables.html">Truth Tables</a></li>
+					<li><a href="equivalence.html">Propositional Equivalence</a></li>
+					<li><a href="circuit.html">Logic Circuits</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="practice.html">Practice Problems</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>Logic Circuits</h1>
+	<p class="body"><b>Logic gates</b> are electronic components that evaluate the simplest basic logical operations. The absence of an electrical signal signifies a Boolean value "false," whereas the presence of an electrical signal signifies "true." When dealing with logic circuits, we would use "0" and "1" rather than "F" and "T", to represent "false" and "true."</p>
+	<p class="body">Logic gates:</p>
+	<center><img src="../images/basicgate.jpg" alt="Basic logic gates: NOT, AND, OR"></center>
+	<p class="body1">The AND-gate. This gate has two input wires and one output wire. If <i>x</i> and <i>y</i> are the values at the two input wires, the <i>x</i> &and; <i>y</i> will be the value at the output wire.</p>
+	<p class="body1">The OR-gate. This gate has two input wires and one output wire. If <i>x</i> and <i>y</i> are the values at the two input wires, the <i>x</i> &or; <i>y</i> will be the value at the output wire.</p>
+	<p class="body1">The NOT-gate (also called an <i>inverter</i>). This gate has one input wire and one output wire. If the input wire has a given value <i>x</i>, then its output wire will have the logical negation<i>x'</i> of <i>x</i>.</p>
+	<p class="body1">The NAND gate operates as an AND gate followed by a NOT gate. It acts in the manner of the logical operation "and" followed by negation. The output is "false" if both inputs are "true." Otherwise, the output is "true."</p>
+	<p class="body1">The NOR gate is a combination OR gate followed by an inverter. Its output is "true" if both inputs are "false." Otherwise, the output is "false."</p>
+	<p class="body1">The XOR (exclusive-OR ) gate acts in the same way as the logical "either/or." The output is "true" if either, but not both, of the inputs are "true." The output is "false" if both inputs are "false" or if both inputs are "true." Another way of looking at this circuit is to observe that the output is 1 if the inputs are different, but 0 if the inputs are the same.</p>
+	<p class="body1">The XNOR (exclusive-NOR) gate is a combination XOR gate followed by an inverter. Its output is "true" if the inputs are the same, and "false" if the inputs are different.</p>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/gI-qXk7XojA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+</body>
+</html>

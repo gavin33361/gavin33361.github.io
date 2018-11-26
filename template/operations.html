@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logical Operations</title>
+	<link rel="stylesheet" type="text/css" href="../style/operations.css">
+</head>
+<body>
+	<nav>
+		<p><a href="../index.html">Propositional Logic</a></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Introduction</a>
+				<ul>
+					<li><a href="logic.html">What is Propositional Logic?</a></li>
+					<li><a href="operations.html">Logical Operations</a></li>
+					<li><a href="forms.html">Propositional Forms</a></li>
+					<li><a href="tables.html">Truth Tables</a></li>
+					<li><a href="equivalence.html">Propositional Equivalence</a></li>
+					<li><a href="circuit.html">Logic Circuits</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Other</a>
+				<ul>
+					<li><a href="practice.html">Practice Problems</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<h1>Logical Operations</h1>
+	<p class="body">Logical operations are often called <b>Boolean operations</b>, in honor of George Boole, a nineteenth century mathematician and philosopher, who was the first to systematically study such logical operations.</p>
+	<p class="body">The simplest operations are unary, meaning that they only operate upon one item (or <b>operand</b>). The most important unary logical operation is <b>logical negation</b>, often called the NOT operation. Logical negation turns true into false and false into true.</p>
+	<p class="body">We denote the (logical) negation of a logical variable by <i>p</i> by <i>p'</i>. The value of the NOT operation is given by the following <b>truth table</b>:</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>p'</i></th></tr>
+			<tr><td>T</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td></tr>
+		</table>
+	</center> 
+	<p class="body">In a truth table, we use "T" and "F" to respectively denote "true" and "false". The first row of the truth table identifies the variable name <i>p</i> and the value of <i>p'</i> of the Boolean operation. The remaining rows tell us how to compute logical negation:</p>
+	<p class="body1">When <i>p</i> = T, we have <i>p'</i> = F, i.e, T' = F.</p>
+	<p class="body1">When <i>p</i> = F, we have <i>p'</i> = T, i.e, F' = T.</p>
+	<p class="body"><b>Binary</b> logical operations mean that the logical operations have two operands. There are two basic binary operations:</p>
+	<p class="body1"><b>Logical conjunction</b>, also called the AND operation, and denoted by the symbol &and;. The conjunction is true if and only if <i>both</i> of its operands are true.</p>
+	<p class="body1"><b>Logical disjunction</b>, also called the (inclusive) OR operation, and denoted by the symbol &or;. The disjunction is true if and only if <i>either</i> of its operands are true.</p>
+	<p class="body">We can summarize these two operations in the following truth tables:</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &and; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td></tr>
+		</table> 
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &or; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>T</td></tr>
+			<tr><td>F</td><td>T</td><td>T</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td></tr>
+		</table> 
+	</center>
+	<p class="body"><i>p</i> &or; <i>q</i> is true <i>even</i> when both p and q are true. This is not the same as "either-or." The <b>exclusive or</b>, often called the XOR operation and denoted by &oplus;. The truth table of XOR is given by</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &oplus; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>F</td></tr>
+			<tr><td>T</td><td>F</td><td>T</td></tr>
+			<tr><td>F</td><td>T</td><td>T</td></tr>
+			<tr><td>F</td><td>F</td><td>F</td></tr>
+		</table> 
+	</center>
+	<p class="body"><b>Conditional</b> operation, denoted by &rArr;, is often referred to as <b>implication</b> or even <b>conditional implication</b>. It can be read in several different ways:</p>
+	<p class="body1">If <i>p</i>, then <i>q</i>.</p>
+	<p class="body1"><i>p</i> implies <i>q</i>.</p>
+	<p class="body1"><i>p</i> only if <i>q</i>.</p>
+	<p class="body1"><i>p</i> is sufficient for <i>q</i>.</p>
+	<p class="body1"><i>q</i> is necessary for <i>p</i>.</p>
+	<p class="body">The truth table for conditional operation is:</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &rArr; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>T</td></tr>
+			<tr><td>F</td><td>F</td><td>T</td></tr>
+		</table>
+	</center> 
+	<p class="body"><b>Biconditional</b> operation, denoted by &hArr;, is often referred to as <b>biconditional implication</b>. It can be read in several different ways:</p>
+	<p class="body1"><i>p</i> if and only if <i>q</i>.</p>
+	<p class="body1"><i>p</i> is necessary and sufficient for <i>q</i>.</p>
+	<p class="body1"><i>p</i> is logically equivalent to <i>q</i>.</p>
+	<p class="body">The truth table for biconditional operation is:</p>
+	<center>
+		<table>
+			<tr><th><i>p</i></th><th><i>q</i></th><th><i>p</i> &hArr; <i>q</i></th></tr>
+			<tr><td>T</td><td>T</td><td>T</td></tr>
+			<tr><td>T</td><td>F</td><td>F</td></tr>
+			<tr><td>F</td><td>T</td><td>F</td></tr>
+			<tr><td>F</td><td>F</td><td>T</td></tr>
+		</table>
+	</center>
+</body>
+</html>
