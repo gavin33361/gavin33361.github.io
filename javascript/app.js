@@ -24,7 +24,7 @@ $(document).ready(function(){
 		var y = 0;
 		function answer2(){
 			if (y%2==0){
-				$("#question2").append("<table><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th><i>p</i> &or; <i>q'</i> &or; <i>r'</i></th></tr>" + 
+				$("#question2").append("<table class='table2'><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th><i>p</i> &or; <i>q'</i> &or; <i>r'</i></th></tr>" + 
 					"<tr><td>T</td><td>T</td><td>T</td><td>T</td></tr>" + 
 					"<tr><td>T</td><td>T</td><td>F</td><td>T</td></tr>" +
 					"<tr><td>T</td><td>F</td><td>T</td><td>T</td></tr>" +
@@ -36,7 +36,7 @@ $(document).ready(function(){
 				y++;}
 				else 
 				{
-					$("table").hide();
+					$(".table2").hide();
 					y++;
 				}
 			}
@@ -46,7 +46,7 @@ $(document).ready(function(){
 			var z = 0;
 			function answer3(){
 				if (z%2==0){
-					$("#question3").append("<table><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th><i>r'</i> &rArr; (<i>q</i> &and; <i>p'</i>)</th></tr>" + 
+					$("#question3").append("<table class='table3'><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th><i>r'</i> &rArr; (<i>q</i> &and; <i>p'</i>)</th></tr>" + 
 						"<tr><td>T</td><td>T</td><td>T</td><td>T</td></tr>" + 
 						"<tr><td>T</td><td>T</td><td>F</td><td>F</td></tr>" +
 						"<tr><td>T</td><td>F</td><td>T</td><td>T</td></tr>" +
@@ -58,7 +58,7 @@ $(document).ready(function(){
 					z++;}
 					else 
 					{
-						$("table").hide();
+						$(".table3").hide();
 						z++;
 					}
 				}
@@ -68,7 +68,7 @@ $(document).ready(function(){
 				var zz = 0;
 				function answer4(){
 					if (zz%2==0){
-						$("#question4").append("<table><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th>(<i>q</i> &or; <i>p'</i>) &rArr; <i>r'</i></th></tr>" + 
+						$("#question4").append("<table class='table4'><tr><th><i>p</i></th><th><i>q</i></th><th><i>r</i></th><th>(<i>q</i> &or; <i>p'</i>) &rArr; <i>r'</i></th></tr>" + 
 							"<tr><td>T</td><td>T</td><td>T</td><td>F</td></tr>" + 
 							"<tr><td>T</td><td>T</td><td>F</td><td>T</td></tr>" +
 							"<tr><td>T</td><td>F</td><td>T</td><td>T</td></tr>" +
@@ -80,7 +80,7 @@ $(document).ready(function(){
 						zz++;}
 						else 
 						{
-							$("table").hide();
+							$(".table4").hide();
 							zz++;
 						}
 					}
