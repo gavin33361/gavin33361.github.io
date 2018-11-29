@@ -102,3 +102,12 @@ h1 {
 	margin-right: 10%;
 	margin-top: 2%;
 }
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+.body1 a:hover {
+	text-decoration: underline;
+}
